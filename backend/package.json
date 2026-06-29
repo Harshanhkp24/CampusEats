@@ -8,6 +8,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "start:cluster": "pm2-runtime ecosystem.config.cjs --env production",
+    "create:admin": "node scripts/createAdmin.js",
     "migrate:vendor-shop-index": "node scripts/migrateUniqueVendorShopIndex.js",
     "loadtest:k6": "k6 run loadtests/k6/campus-eats.js",
     "loadtest:autocannon": "node loadtests/autocannon/run.js"
